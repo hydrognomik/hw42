@@ -1,7 +1,7 @@
 import React from 'react';
 import { cn } from '@bem-react/classname';
 
-import Content from '../Content/Content';
+import { Content } from '../Content/Content';
 
 import './Main.css';
 

@@ -11,12 +11,12 @@ interface IMenuItem {
 }
 
 interface IMenuProps {
-  items: IMenuItem[]
+  items: IMenuItem[];
 }
 
 const menu = cn('Menu');
 
-const Menu = ({ items }: IMenuProps) => (
+export const Menu = ({ items }: IMenuProps) => (
   <React.Fragment>
     <nav className={menu()}>
       <ul className={menu('List')}>
@@ -29,6 +29,4 @@ const Menu = ({ items }: IMenuProps) => (
     </nav>
     <div className={menu('Icon')} />
   </React.Fragment>
-)
-
-export default Menu;
+);

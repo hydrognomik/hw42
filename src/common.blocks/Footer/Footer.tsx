@@ -7,7 +7,7 @@ import './Footer.css';
 
 const footer = cn('Footer');
 
-const Footer = () => (
+export const Footer = () => (
   <footer className={footer()}>
     <Link href="#" className={footer('Link')}>Помощь</Link>
     <Link href="#" className={footer('Link')}>Обратная связь</Link>
@@ -21,5 +21,3 @@ const Footer = () => (
     </Link>
   </footer>
 );
-
-export default Footer;

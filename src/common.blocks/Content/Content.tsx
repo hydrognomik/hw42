@@ -11,7 +11,7 @@ const cnApp = cn('App');
 const cnCard = cn('Card');
 const content = cn('Content');
 
-class Content extends React.Component {
+export class Content extends React.Component {
   state = { events: [] };
 
   componentDidMount() {
@@ -42,15 +42,5 @@ class Content extends React.Component {
         }}
       </RegistryConsumer>
     );
-
-    // return (
-      // <div className={content()}>
-      //   {events && events.map((event: IEvent, index) => (
-      //     <Card event={event} key={index} />
-      //   ))}
-      // </div>
-    // );
   }
 }
-
-export default Content;
