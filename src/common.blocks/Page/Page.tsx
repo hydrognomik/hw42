@@ -2,23 +2,39 @@ import React from 'react';
 import { cn } from '@bem-react/classname';
 import { RegistryConsumer } from '@bem-react/di';
 
-import { Footer } from '../Footer/Footer';
-import { Header } from '../Header/Header';
+import { Footer as CommonFooter } from '../Footer/Footer';
+import { Header as CommonHeader } from '../Header/Header';
 
 import './Page.css';
 
-const cnPage = cn('Page');
 const cnApp = cn('App');
+const cnFooter = cn('Footer');
+const cnHeader = cn('Header');
 const cnMain = cn('Main');
+const cnPage = cn('Page');
 
 export const Page = () => (
   <RegistryConsumer>
     {registries => {
         // reading App registry
         const registry = registries[cnApp()];
+        let Footer;
+        let Header;
 
         // taking desktop or mobile version
         const Main = registry.get(cnMain());
+
+        try {
+          Footer = registry.get(cnFooter());
+        } catch (err) {
+          Footer = CommonFooter;
+        }
+
+        try {
+          Header = registry.get(cnHeader());
+        } catch (err) {
+          Header = CommonHeader;
+        }
 
         return (
           <>
