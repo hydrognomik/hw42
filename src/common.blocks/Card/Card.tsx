@@ -106,7 +106,7 @@ export const Card = ({ event }: ICardProps) => {
                 (
                   <div className={cnCard('ContentButtons')}>
                     {data.buttons.map(b => (
-                      <Button text={b} />
+                      <Button text={b} key={b} />
                     ))}
                   </div>
                 )}

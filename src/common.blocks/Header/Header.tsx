@@ -15,6 +15,7 @@ const menuItems = [
   {
     href: '#',
     text: 'События',
+    state: 'active',
   },
   {
     href: '#',

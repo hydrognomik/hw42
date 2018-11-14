@@ -1,7 +1,7 @@
 import React from 'react';
 import { cn } from '@bem-react/classname';
 
-import Link from '../Link/Link';
+import { Link } from '../Link';
 
 import './Footer.css';
 
