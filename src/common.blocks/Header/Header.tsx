@@ -1,12 +1,15 @@
 import React from 'react';
 import { cn } from '@bem-react/classname';
+import { RegistryConsumer } from '@bem-react/di';
 
 import Logo from '../Logo/Logo';
-import { Menu } from '../Menu/Menu';
+import { Menu as CommonMenu } from '../Menu/Menu';
 
 import './Header.css';
 
-const header = cn('Header');
+const cnApp = cn('App');
+const cnHeader = cn('Header');
+const cnMenu = cn('Menu');
 
 const menuItems = [
   {
@@ -28,8 +31,24 @@ const menuItems = [
 ];
 
 export const Header = () => (
-  <header className={header()}>
-    <Logo />
-    <Menu items={menuItems} />
-  </header>
+  <RegistryConsumer>
+    {registries => {
+
+      const registry = registries[cnApp()];
+      let Menu;
+
+      try {
+        Menu = registry.get(cnMenu());
+      } catch (err) {
+        Menu = CommonMenu;
+      }
+
+      return (
+        <header className={cnHeader()}>
+          <Logo />
+          <Menu items={menuItems} />
+        </header>
+      );
+    }}
+  </RegistryConsumer>
 );
