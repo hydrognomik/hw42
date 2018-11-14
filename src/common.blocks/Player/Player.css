@@ -1,0 +1,120 @@
+.Player {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.Player-Top {
+  display: grid;
+  column-gap: 16px;
+  grid-template-rows: 26px;
+  grid-template-columns: 53px 1fr;
+}
+
+.Player-Albumcover {
+  width: 100%;
+  border-radius: 10px;
+  grid-row: span 2;
+}
+
+.Player-Value {
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: rgba(161, 161, 161, 0.84);
+}
+
+.Player-Track {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  grid-row: span 1;
+}
+
+.Player-TrackLength {
+  position: relative;
+  align-self: flex-end;
+}
+
+.Player-TrackLength::before {
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+  display: block;
+  width: 80%;
+  height: 1px;
+  content: "";
+  background: #979797;
+}
+
+.Player-TrackLength::after {
+  position: absolute;
+  bottom: -2px;
+  left: 10%;
+  display: block;
+  width: 6px;
+  height: 20px;
+  content: "";
+  border-radius: 4.5px;
+  background: #d8d8d8;
+}
+
+.Player-Controls {
+  display: grid;
+  grid-template-columns: 53px 53px 1fr;
+  column-gap: 20px;
+}
+
+.Player-Button {
+  width: 53px;
+  height: 53px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.Player-Button:first-child {
+  margin-right: 20px;
+}
+
+.Player-Volume {
+  position: relative;
+}
+
+.Player-VolumeValue {
+  bottom: 20px;
+}
+
+.Player-Volume::before {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  display: block;
+  width: 70%;
+  height: 4px;
+  content: "";
+  background: rgba(216, 216, 216, 0.3);
+}
+
+.Player-Volume::after {
+  position: absolute;
+  bottom: 19px;
+  left: 50%;
+  display: block;
+  width: 16px;
+  height: 16px;
+  content: "";
+  border-radius: 50%;
+  background: #605757;
+}
+
+.Player-Button_prev {
+  background: url("./Prev.svg") center/auto no-repeat;
+}
+
+.Player-Button_next {
+  transform: rotate(180deg);
+  background: url("./Prev.svg") center/auto no-repeat;
+}

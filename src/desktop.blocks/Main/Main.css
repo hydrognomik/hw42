@@ -1,0 +1,15 @@
+.Main {
+  margin: 0 170px;
+  padding: 0 40px;
+}
+
+.Main-Header {
+  font-size: 36px;
+}
+
+@media screen and (max-width: 1450px) {
+  .Main {
+    max-width: 1030px;
+    margin: 0 auto;
+  }
+}

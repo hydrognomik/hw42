@@ -1,0 +1,10 @@
+.Camera-Image {
+  height: 100%;
+  display: block;
+}
+
+.Camera-ImageWrapper {
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 10px;
+}

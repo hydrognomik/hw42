@@ -1,0 +1,17 @@
+.Camera-Image {
+  max-height: 250px;
+  user-select: none;
+  touch-action: none;
+}
+
+.Camera-ImageWrapper {
+  overflow-x: auto;
+  max-height: 250px;
+}
+
+.Camera-Controls {
+  font-size: 0.6666em;
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+}

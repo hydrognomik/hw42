@@ -1,0 +1,33 @@
+.Menu {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0 0 20px;
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+  transform: translate(-20px, -51px);
+  opacity: 0;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fff;
+  align-self: baseline;
+}
+
+.Menu-Icon {
+  display: block;
+}
+
+.Menu-Item {
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+.Menu-List {
+  display: flex;
+  flex-direction: column;
+}
+
+.Menu_open {
+  transform: translate(-20px, 64px);
+  opacity: 1;
+}

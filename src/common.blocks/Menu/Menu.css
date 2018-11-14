@@ -1,0 +1,21 @@
+.Menu {
+  margin-left: 58px;
+}
+
+.Menu-Icon {
+  display: none;
+}
+
+.Menu-Item {
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 27px;
+}
+
+.Menu-List {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: flex-start;
+}

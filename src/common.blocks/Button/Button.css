@@ -1,0 +1,29 @@
+.Button {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  height: 54px;
+  cursor: pointer;
+  border-radius: 8px;
+  background: #e5e5e5;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 132px;
+  border: none;
+}
+
+.Button_theme_yellow {
+  background: #ffd93e;
+}
+
+.Button:hover {
+  box-shadow: 0 2px 6px 0 rgba(255, 225, 225, 0.6);
+}
+
+.Button:active {
+  box-shadow: none;
+}
+
+.Button:not(:last-child) {
+  margin-right: 18px;
+}
