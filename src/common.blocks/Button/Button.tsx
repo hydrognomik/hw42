@@ -1,12 +1,12 @@
 import React from 'react';
 import { cn } from '@bem-react/classname';
 
+import { IButtonProps } from './index';
+
 import './Button.css';
 
 const cnButton = cn('Button');
 
-const Button = ({ text }: { text: string }) => (
-  <button className={cnButton()}>{text}</button>
+export const Button = ({ className, text, ...props }: IButtonProps) => (
+  <button className={cnButton(null, [className])}>{text}</button>
 );
-
-export default Button;

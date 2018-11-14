@@ -8,7 +8,6 @@ type ReactText = string | number;
 type ReactChild = ReactElement<any> | ReactText;
 
 export interface ILinkProps extends IClassNameProps {
-  className: string;
   children?: ReactChild;
   href: string;
   target?: '_blank' | '_self' | '_parent' | '_top';

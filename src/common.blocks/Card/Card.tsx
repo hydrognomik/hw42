@@ -2,7 +2,7 @@ import React from 'react';
 import { cn } from '@bem-react/classname';
 import { RegistryConsumer } from '@bem-react/di';
 
-import Button from '../Button/Button';
+import { Button } from '../Button';
 import Player from '../Player/Player';
 
 import './Card.css';
@@ -106,7 +106,7 @@ export const Card = ({ event }: ICardProps) => {
                 (
                   <div className={cnCard('ContentButtons')}>
                     {data.buttons.map(b => (
-                      <Button text={b} key={b} />
+                      <Button text={b} key={b} theme={b === 'Да' ? 'yellow' : undefined} />
                     ))}
                   </div>
                 )}

@@ -12,10 +12,6 @@
   border: none;
 }
 
-.Button_theme_yellow {
-  background: #ffd93e;
-}
-
 .Button:hover {
   box-shadow: 0 2px 6px 0 rgba(255, 225, 225, 0.6);
 }
@@ -26,4 +22,8 @@
 
 .Button:not(:last-child) {
   margin-right: 18px;
+}
+
+.Button_theme_yellow {
+  background: #ffd93e;
 }
