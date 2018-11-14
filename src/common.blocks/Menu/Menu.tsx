@@ -2,6 +2,7 @@ import React from 'react';
 import { cn } from '@bem-react/classname';
 
 import Link from '../Link/Link';
+import { ReactComponent as MenuIcon } from './MenuIcon.svg';
 
 import './Menu.css';
 
@@ -27,6 +28,8 @@ export const Menu = ({ items }: IMenuProps) => (
         ))}
       </ul>
     </nav>
-    <div className={menu('Icon')} />
+    <div className={menu('Icon')}>
+      <MenuIcon />
+    </div>
   </React.Fragment>
 );

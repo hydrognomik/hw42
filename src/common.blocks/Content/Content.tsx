@@ -33,7 +33,7 @@ export class Content extends React.Component {
             const Card = registry.get<ICardProps>(cnCard());
 
             return (
-              <div className={content()}>
+              <div className={content({ theme: 'main' })}>
                 {events && events.map((event: IEvent, index) => (
                   <Card event={event} key={index} />
                 ))}
