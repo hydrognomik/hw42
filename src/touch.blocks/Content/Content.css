@@ -1,4 +1,6 @@
-.Content_theme_main {
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
+@media screen and (max-width: 550px) {
+  .Content_theme_main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
 }

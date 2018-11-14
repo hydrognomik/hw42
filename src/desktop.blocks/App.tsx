@@ -18,4 +18,4 @@ desktop.set(cnMain(), Main);
 desktop.set(cnCard(), Card);
 desktop.set(cnCamera(), Camera);
 
-export default withRegistry(desktop)(AppCommon);
+export const AppDesktop = withRegistry(desktop)(AppCommon);

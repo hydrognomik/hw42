@@ -33,4 +33,4 @@ touch.set(cnMain(), Main);
 touch.set(cnMenu(), Menu);
 touch.set(cnPage(), Page);
 
-export default withRegistry(touch)(AppCommon);
+export const AppTouch = withRegistry(touch)(AppCommon);
